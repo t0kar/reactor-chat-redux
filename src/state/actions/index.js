@@ -16,7 +16,6 @@ export function onSendMessage(message) {
 }
 
 export function onSendComment(message, parent_id) {
-  onMessageReply((dispatch) => dispatch([]));
   return {
     type: 'SEND_COMMENT',
     parent_id: parent_id,
